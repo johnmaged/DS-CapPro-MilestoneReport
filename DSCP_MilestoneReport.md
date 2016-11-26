@@ -1,16 +1,6 @@
 #Data Science Capstone Project - Milestone Project
 ####By John Maged
 
-
-```{r}
-library(tm)
-Sys.setenv(JAVA_HOME="C:\\Program Files\\Java\\jre1.8.0_92")
-library(rJava)
-library(RWeka)
-library(googleVis)
-library(wordcloud)
-```
-
 ## Introduction
 
 This milestone report will be applying data science in the area of natural language processing (NLP). 
@@ -128,6 +118,7 @@ summary.df
 ```{r, eval=TRUE, echo=FALSE}
 barplot(t(as.matrix(summary.df)), horiz = T, col=c("red","green","blue"),legend = rownames(t(as.matrix(summary.df))),beside=TRUE)
 ```
+![](01.jpg)
 
 ## Building a clean corpus
 
@@ -266,6 +257,7 @@ A word cloud usually provides a first overview of the word frequencies. The word
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 wordcloud(cleanSample, max.words = 200, random.order = TRUE)
 ```
+![](02.jpg)
 
 # Conclusion
 
